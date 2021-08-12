@@ -26,6 +26,7 @@ func (runner *Runner) Setup() error {
 			"charset":   "utf8",
 			"parseTime": "True",
 		},
+		AllowNativePasswords: true,
 	}
 	dbConn, err := sql.Open("mysql", dbConfig.FormatDSN())
 	if err != nil {
