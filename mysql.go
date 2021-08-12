@@ -25,6 +25,7 @@ func NewMySQLDB(
 			"charset":   "utf8",
 			"parseTime": "True",
 		},
+		AllowNativePasswords: true,
 	}
 
 	return &mySQLDB{
